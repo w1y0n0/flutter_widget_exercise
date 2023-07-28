@@ -40,47 +40,60 @@ class _ScaffoldWidgetState extends State<ScaffoldWidget> {
             ),
           ],
         ),
-        child: Column(
-          children: [
-            const Center(
-              child: Text(
-                'Hello',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 2,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              const Center(
+                child: Text(
+                  'Hello',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2,
+                  ),
                 ),
               ),
-            ),
-            const Icon(
-              Icons.access_alarm,
-              size: 30,
-              color: Colors.amberAccent,
-            ),
-            Image.asset(
-              'assets/images/login.png',
-              height: 150,
-            ),
-            Image.network(
-              'https://i.pravatar.cc/300',
-              height: 150,
-            ),
-            CircleAvatar(
-              backgroundColor: Colors.green,
-              radius: 50,
-              child: CircleAvatar(
-                backgroundColor: Colors.yellow,
-                radius: 45,
-                child: Image.network(
-                  'https://i.pravatar.cc/300',
-                  height: 50,
-                  fit: BoxFit.cover,
+              const Icon(
+                Icons.access_alarm,
+                size: 30,
+                color: Colors.amberAccent,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Image.asset(
+                      'assets/images/login.png',
+                      height: 50,
+                    ),
+                    Image.network(
+                      'https://i.pravatar.cc/300',
+                      height: 50,
+                    ),
+                  ],
                 ),
               ),
-            ),
-          ],
+              CircleAvatar(
+                backgroundColor: Colors.green,
+                radius: 50,
+                child: CircleAvatar(
+                  backgroundColor: Colors.yellow,
+                  radius: 45,
+                  child: Image.network(
+                    'https://i.pravatar.cc/300',
+                    height: 50,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
