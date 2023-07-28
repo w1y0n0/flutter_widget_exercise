@@ -25,7 +25,7 @@ class _ScaffoldWidgetState extends State<ScaffoldWidget> {
       ),
       // body: const Center(child: Text('Ini Body')),
       body: Container(
-        height: 300,
+        height: double.infinity,
         // color: Colors.redAccent,
         width: double.infinity,
         margin: const EdgeInsets.all(10),
@@ -40,17 +40,47 @@ class _ScaffoldWidgetState extends State<ScaffoldWidget> {
             ),
           ],
         ),
-        child: const Center(
-          child: Text(
-            'Hello',
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: 20,
-              fontStyle: FontStyle.italic,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2,
+        child: Column(
+          children: [
+            const Center(
+              child: Text(
+                'Hello',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2,
+                ),
+              ),
             ),
-          ),
+            const Icon(
+              Icons.access_alarm,
+              size: 30,
+              color: Colors.amberAccent,
+            ),
+            Image.asset(
+              'assets/images/login.png',
+              height: 150,
+            ),
+            Image.network(
+              'https://i.pravatar.cc/300',
+              height: 150,
+            ),
+            CircleAvatar(
+              backgroundColor: Colors.green,
+              radius: 50,
+              child: CircleAvatar(
+                backgroundColor: Colors.yellow,
+                radius: 45,
+                child: Image.network(
+                  'https://i.pravatar.cc/300',
+                  height: 50,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
