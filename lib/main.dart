@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_exercise/lesson/form_widget.dart';
 import 'package:flutter_widget_exercise/lesson/scaffold_widget.dart';
+import 'package:flutter_widget_exercise/material3/common_button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,16 +22,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(
         useMaterial3: true,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Home'),
-        ),
-        body: const Center(
-          child: Text(
-            'Hello World!',
-          ),
-        ),
-      ),
+      home: const CommonButton(),
+      // home: Scaffold(
+      //   appBar: AppBar(
+      //     title: const Text('Home'),
+      //   ),
+      //   body: const Center(
+      //     child: Text(
+      //       'Hello World!',
+      //     ),
+      //   ),
+      // ),
     );
   }
 }
