@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_exercise/lesson/form_widget.dart';
 import 'package:flutter_widget_exercise/lesson/scaffold_widget.dart';
+import 'package:flutter_widget_exercise/material3/badges.dart';
 import 'package:flutter_widget_exercise/material3/common_button.dart';
 import 'package:flutter_widget_exercise/material3/floating_action_buttons.dart';
 import 'package:flutter_widget_exercise/material3/icons_buttons.dart';
@@ -38,7 +39,8 @@ class MyApp extends StatelessWidget {
       // home: const CommonButton(),
       // home: const FloatingActionButtons(),
       // home: const IconButtons(),
-      home: const SegmentedButtons(),
+      // home: const SegmentedButtons(),
+      home: const Badges(),
     );
   }
 }
