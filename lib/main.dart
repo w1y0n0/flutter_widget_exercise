@@ -6,6 +6,7 @@ import 'package:flutter_widget_exercise/material3/common_button.dart';
 import 'package:flutter_widget_exercise/material3/floating_action_buttons.dart';
 import 'package:flutter_widget_exercise/material3/icons_buttons.dart';
 import 'package:flutter_widget_exercise/material3/nav_bar.dart';
+import 'package:flutter_widget_exercise/material3/nav_rail.dart';
 import 'package:flutter_widget_exercise/material3/segmented_buttons.dart';
 
 void main() {
@@ -42,7 +43,8 @@ class MyApp extends StatelessWidget {
       // home: const IconButtons(),
       // home: const SegmentedButtons(),
       // home: const Badges(),
-      home: const NavBar(),
+      // home: const NavBar(),
+      home: const NavRail(),
     );
   }
 }
