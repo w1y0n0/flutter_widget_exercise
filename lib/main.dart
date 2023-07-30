@@ -4,6 +4,7 @@ import 'package:flutter_widget_exercise/lesson/scaffold_widget.dart';
 import 'package:flutter_widget_exercise/material3/common_button.dart';
 import 'package:flutter_widget_exercise/material3/floating_action_buttons.dart';
 import 'package:flutter_widget_exercise/material3/icons_buttons.dart';
+import 'package:flutter_widget_exercise/material3/segmented_buttons.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       //   useMaterial3: true,
       // ),
-      theme: ThemeData.light(
+      theme: ThemeData.dark(
         useMaterial3: true,
       ),
       // home: Scaffold(
@@ -36,7 +37,8 @@ class MyApp extends StatelessWidget {
       // ),
       // home: const CommonButton(),
       // home: const FloatingActionButtons(),
-      home: const IconButtons(),
+      // home: const IconButtons(),
+      home: const SegmentedButtons(),
     );
   }
 }
